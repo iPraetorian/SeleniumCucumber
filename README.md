@@ -5,7 +5,7 @@
 #### 1. Install Chome webdriver
 
 ```
-curl -o https://chromedriver.storage.googleapis.com/2.28/chromedriver_mac64.zip
+curl -o https://chromedriver.storage.googleapis.com/2.40/chromedriver_mac64.zip
 unzip chromedriver_mac64.zip
 sudo cp chromedriver /usr/local/bin
 ```
