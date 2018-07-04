@@ -33,7 +33,7 @@ Feature: User log in
 
     Given I am on the login page
     When I enter default credentials
-    Then I am sent to the /html/ page
+    Then I am sent to the /start page
 
 ```
 
@@ -58,7 +58,7 @@ public void goto_login()
 @When("^I enter default credentials$")
 public void enter_default_credentials()
 {
-  driver.findElement( By.id( "username" ) ).sendKeys( "sadmin@manitou.com");
+  driver.findElement( By.id( "username" ) ).sendKeys( "sadmin@somesystem.com");
   driver.findElement( By.id( "password" ) ).sendKeys( "password");
   driver.findElement( By.id( "submit" ) ).click();
 
