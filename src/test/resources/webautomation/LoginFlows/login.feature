@@ -2,7 +2,7 @@
 
 Feature: User log in
 
-  Scenario: As a user I should be able to log in to Documoto
+  Scenario: As a user I should be able to log in to application
 
     Given I am on the login page
     When I enter default credentials
