@@ -76,7 +76,7 @@ public abstract class BasePage
    {
       return getWebDriver().findElement( byDataId( dataId ) );
    }
-
+//TODO update to reflect data-test-id selectors//
    protected By byDataId( String dataId )
    {
       return By.xpath( String.format( "//*[@data-id=\"%s\"]", dataId ) );
