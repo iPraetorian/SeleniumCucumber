@@ -1,7 +1,7 @@
 package webautomation;
-import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
-import org.junit.runner.RunWith;
+        import cucumber.api.CucumberOptions;
+        import cucumber.api.junit.Cucumber;
+        import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(format ={"pretty","html:reports/test-report"}, tags = CucumberRunner.RUN_ALL)
@@ -13,6 +13,6 @@ public class CucumberRunner {
    }
 
    // Putting each test on a separate line will make it easier to merge
-   static final String RUN_ALL = "@loginTest ";
+   static final String RUN_ALL = "@US67593";
 
 }
