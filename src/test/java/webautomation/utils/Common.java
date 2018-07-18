@@ -32,6 +32,11 @@ public class Common {
 //      getWebDriver().get(new URI(getWebDriver().getCurrentUrl()).resolve(pageURL).toString());
 //   }
 
+   @Given("^I am on the cancel subscription reasons page$")
+   public void cancel_reasons_page() {
+
+   }
+
    @Given("^I am logged in as the default user on the home page$")
    public void login_as_default_user() {
       Login loginPage = new Login();

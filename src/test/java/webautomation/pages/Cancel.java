@@ -1,21 +1,19 @@
 package webautomation.pages;
 
 import cucumber.api.java.en.Given;
-import cucumber.api.java.en.When;
-
-import org.openqa.selenium.By;
 import webautomation.utils.BasePage;
 
 
 
-public class CancelReasons extends BasePage {
-    public static final String URL = "https://localhost:2124";
+public class Cancel extends BasePage
+{
+    public static final String URL = "https://localhost:17338";
 
     @Given("^I am on the cancel subscription reasons page$")
-    public void cancel_subscription_reasons_page(){
+    public void cancel_subscription_reasons_page()
+    {
         driver.get(URL);
     }
-
 
 
 //    @When("^I click the Too Expensive icon$")
