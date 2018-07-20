@@ -13,6 +13,6 @@ public class CucumberRunner {
    }
 
    // Putting each test on a separate line will make it easier to merge
-   static final String RUN_ALL = "@loginTest";
+   static final String RUN_ALL = "@acceptance";
 
 }

@@ -22,52 +22,48 @@ import static webautomation.utils.WebDriverFactory.*;
 
 // This class contains common cucumber steps that not tied to a specific page
 public class Common {
-   @Then("^I am sent to the ([^\"]*) page$")
-   public void i_am_sent_to_page(String url) throws Throwable {
-      assertTrue(getWebDriver().getCurrentUrl().endsWith(url));
-   }
-
-//   @And("^I navigate to url \"([^\"]*)\"$")
-//   public void iNavigateToAnAssemblyPage(String pageURL) throws Throwable {
-//      getWebDriver().get(new URI(getWebDriver().getCurrentUrl()).resolve(pageURL).toString());
+//   @Then("^I am sent to the ([^\"]*) page$")
+//   public void i_am_sent_to_page(String url) throws Throwable {
+//      assertTrue(getWebDriver().getCurrentUrl().endsWith(url));
 //   }
-
-   @Given("^I am on the cancel subscription reasons page$")
-   public void cancel_reasons_page() {
-
-   }
-
-   @Given("^I am logged in as the default user on the home page$")
-   public void login_as_default_user() {
-      Login loginPage = new Login();
-      loginPage.goto_login();
-      loginPage.enter_default_credentials();
-   }
-
-   @Given("^I am logged in as the default user on the \"([^\"]*)\" page$")
-   public void login_as_default_user_and_on_a_specific_page(String page) {
-      Login loginPage = new Login();
-      loginPage.goto_login();
-      loginPage.enter_default_credentials();
-
-      getWebDriver().get(page);
-   }
-
-   @And("^I scroll up to the top of the page$")
-   public void iScrollUpToTheTopOfThePage() throws Throwable {
-
-      Actions actions = new Actions(getWebDriver());
-      actions.sendKeys(Keys.PAGE_UP).build().perform();
-
-   }
-
-   @And("^I scroll down to the bottom of the page$")
-   public void iScrollDownToTheBottomOfThePage() throws Throwable {
-
-      Actions actions = new Actions(getWebDriver());
-      actions.sendKeys(Keys.PAGE_DOWN).build().perform();
-
-   }
+//
+////   @And("^I navigate to url \"([^\"]*)\"$")
+////   public void iNavigateToAnAssemblyPage(String pageURL) throws Throwable {
+////      getWebDriver().get(new URI(getWebDriver().getCurrentUrl()).resolve(pageURL).toString());
+////   }
+//
+//
+//   @Given("^I am logged in as the default user on the home page$")
+//   public void login_as_default_user() {
+//      Login loginPage = new Login();
+//      loginPage.goto_login();
+//      loginPage.enter_default_credentials();
+//   }
+//
+//   @Given("^I am logged in as the default user on the \"([^\"]*)\" page$")
+//   public void login_as_default_user_and_on_a_specific_page(String page) {
+//      Login loginPage = new Login();
+//      loginPage.goto_login();
+//      loginPage.enter_default_credentials();
+//
+//      getWebDriver().get(page);
+//   }
+//
+//   @And("^I scroll up to the top of the page$")
+//   public void iScrollUpToTheTopOfThePage() throws Throwable {
+//
+//      Actions actions = new Actions(getWebDriver());
+//      actions.sendKeys(Keys.PAGE_UP).build().perform();
+//
+//   }
+//
+//   @And("^I scroll down to the bottom of the page$")
+//   public void iScrollDownToTheBottomOfThePage() throws Throwable {
+//
+//      Actions actions = new Actions(getWebDriver());
+//      actions.sendKeys(Keys.PAGE_DOWN).build().perform();
+//
+//   }
 
    private void waitUntilVisible(By component) {
       WebDriverWait wait = new WebDriverWait(getWebDriver(), 10);
@@ -91,11 +87,11 @@ public class Common {
       setSauceLabsTestName(sb.toString());
    }
 
-   @And("^I scroll up to the top$")
-   public void iScrollUpToTheTop() throws Throwable {
-      Thread.sleep(1500);
-      iScrollUpToTheTopOfThePage();
-   }
+//   @And("^I scroll up to the top$")
+//   public void iScrollUpToTheTop() throws Throwable {
+//      Thread.sleep(1500);
+//      iScrollUpToTheTopOfThePage();
+//   }
 
 
 

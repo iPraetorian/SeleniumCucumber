@@ -79,6 +79,6 @@ public abstract class BasePage
 //TODO update to reflect data-test-id selectors//
    protected By byDataId( String dataId )
    {
-      return By.xpath( String.format( "//*[@data-id=\"%s\"]", dataId ) );
+      return By.xpath( String.format( "//*[@data-test-id=\"%s\"]", dataId ) );
    }
 }
